@@ -14,7 +14,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidNameFieldEmpty() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("");
         $("[data-test-id=phone] input").setValue("+78005553535");
         $("[data-test-id=agreement]").click();
@@ -24,7 +23,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidNameField() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("John Mayson");
         $("[data-test-id=phone] input").setValue("+78005553535");
         $("[data-test-id=agreement]").click();
@@ -34,7 +32,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidNumberTelephoneField() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Джон Мэйсон");
         $("[data-test-id=phone] input").setValue("+780055535355");
         $("[data-test-id=agreement]").click();
@@ -44,7 +41,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidNumberTelephoneFieldWithWord() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Джон Мэйсон");
         $("[data-test-id=phone] input").setValue("Mayson");
         $("[data-test-id=agreement]").click();
@@ -54,7 +50,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidNumberTelephoneFieldEmpty() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Джон Мэйсон");
         $("[data-test-id=phone] input").setValue("");
         $("[data-test-id=agreement]").click();
@@ -64,7 +59,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidTermsAgreement() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Джон Мэйсон");
         $("[data-test-id=phone] input").setValue("+78005553535");
         $("[type=button]").click();
@@ -73,7 +67,6 @@ public class CardOrderNegativeTest {
 
     @Test
     public void shouldShowErrorInvalidValueFieldsEmpty() {
-        $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("");
         $("[data-test-id=phone] input").setValue("");
         $("[data-test-id=agreement]").click();
